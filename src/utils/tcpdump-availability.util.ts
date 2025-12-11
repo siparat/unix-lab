@@ -1,6 +1,6 @@
 import { exec } from 'child_process';
 
-export const checkTcpdumpAvailability = async (): Promise<true> => {
+export const checkTCPDumpAvailability = async (): Promise<true> => {
 	return await new Promise((res, rej) => {
 		exec('which tcpdump', (error) => {
 			if (error) {
